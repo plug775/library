@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Poll</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+
+<body>
+     <nav>
+        <ul>
+            <li><a href="home.html">home</a></li>
+   
+                <li>
+                    <a href="#">จัดการ</a>
+                    <ul class="dropdown">
+                        <li><a href="display">หนังสือ</a></li><br>
+                        <li><a href="#">aaaa</a></li><br>
+                        
+                    </ul>
+                </li>
+               
+                <li><a href="#">aaaa</a></li>
+                <li><a href="#">aaaa</a></li>
+                
+           <li><a href="profile.php">โปรไฟล์</a></li>
+            
+          
+            <li><a href="index.html">Logout</a></li>
+        </ul>
+    </nav>
+
+    <div class="table1">
+        <h1>เพิ่มข้อมูลหนังสือ</h1>
+        <form action="book" method="post" enctype="multipart/form-data">
+
+            <div class="form-group">
+                <label for="b_id">รหัสหนังสือ</label>
+                <input type="text" name="b_id" id="b_id" required>
+            </div>
+            <div class="form-group">
+                <label for="b_name">ชื่อหนังสือ</label>
+                <input type="password" name="b_name" id="b_name" required>
+            </div>
+            <div class="form-group">
+                <label for="b_cat">ประภทหนังสือ</label>
+                <input type="text" name="b_cat" id="b_cat" required>
+            </div>
+            <div class="form-group">
+                <label for="b_writer">นักเขียน</label>
+                <input type="text" name="b_writer" id="b_writer" required>
+            </div>
+            <div class="form-group">
+                <label for="b_img">รูปภาพ</label>
+                <input type="file" name="b_img" id="b_img" accept="image/*" required>
+            </div>
+
+            <div class="form-group">
+                <button type="submit">ยืนยัน</button>
+                <!-- ปรับให้ลิงก์แยกจากปุ่ม -->
+                <a href="book.html" class="cancel-button">
+                    <button type="button">ยกเลิก</button>
+                </a>
+            </div>
+
+        </form>
+    </div>
+
+</body>
+
+</html>
