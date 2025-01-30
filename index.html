@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ระบบหนังสือออนไลน์</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="login-form">
+        <h1>Sign Up</h1>
+        <form action="login" method="post">
+            <!-- Username Input -->
+            <label for="username">Username</label>
+            <input 
+                type="text" 
+                id="username" 
+                name="u_user" 
+                placeholder="Enter your username" 
+                required 
+                minlength="3"
+            >
+            
+            <!-- Password Input -->
+            <label for="password">Password</label>
+            <input 
+                type="password" 
+                id="password" 
+                name="u_pass" 
+                placeholder="Enter your password" 
+                required 
+                minlength="4"
+            >
+            
+            <!-- Register Link -->
+            <a href="form_register.html" style="text-decoration: none; color: white;">Register</a><br>
+            
+            <!-- Submit Button -->
+            <button type="submit">Sign up</button>
+        </form>
+    </div>
+</body>
+</html>
